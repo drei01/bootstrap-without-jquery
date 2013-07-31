@@ -1,6 +1,14 @@
 #Bootstrap without jQuery
 ========================
 
+### Edit: by Drei01
+
+I have namespaced the plugin and refactored a bit.
+You can now initialise a dropdown manually by passing the node into the global function.
+
+`bootstrapnojquery.initdropdown(element);`
+
+
 ## Introduction
 
 A lightweight script to replace jQuery for simple interactions when using [Twitter Bootstrap](http://twitter.github.io/bootstrap/).
