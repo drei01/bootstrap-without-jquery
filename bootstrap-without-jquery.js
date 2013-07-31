@@ -4,7 +4,11 @@
  * https://github.com/tagawa/bootstrap-without-jquery
  */
 
-;(function() {
+!function (name, context, definition) {
+  if (typeof module != 'undefined' && module.exports) module.exports = definition()
+  else if (typeof define == 'function' && define.amd) define(definition)
+  else context[name] = definition()
+}('reqwest', this, function () {
     'use strict';
 
     // querySelectorAll support for older IE
@@ -116,4 +120,4 @@
         alerts[i].onclick = closeAlert;
     }
 
-})();
+});
