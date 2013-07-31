@@ -29,7 +29,7 @@
     }
 
     // Get the "hidden" height of a collapsed element
-    function getHiddenHeight(el) {
+    var getHiddenHeight = function (el) {
         var children = el.children;
         var height = 0;
         for (var i = 0, len = children.length, child; i < len; i++) {
@@ -40,7 +40,7 @@
     }
 
     // Collapse and expand the relevent element 
-    function doCollapse(event) {
+    var doCollapse = function (event) {
         event = event || window.event;
         var evTarget = event.currentTarget || event.srcElement;
         var dataTarget = evTarget.getAttribute('data-target');
@@ -62,7 +62,7 @@
     }
 
     // Show a dropdown menu
-    function doDropdown(event) {
+    var doDropdown = function (event) {
         event = event || window.event;
         var evTarget = event.currentTarget || event.srcElement;
         var target = evTarget.parentElement;
@@ -80,7 +80,7 @@
     }
     
     // Close a dropdown menu
-    function closeDropdown(event) {
+    var closeDropdown = function (event) {
         event = event || window.event;
         var evTarget = event.currentTarget || event.srcElement;
         var target = evTarget.parentElement;
@@ -90,7 +90,7 @@
     }
 
     // Close an alert box by removing it from the DOM
-    function closeAlert(event) {
+    var closeAlert = function (event) {
         event = event || window.event;
         var evTarget = event.currentTarget || event.srcElement;
         var alertBox = evTarget.parentElement;
